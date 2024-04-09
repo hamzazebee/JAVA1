@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In</title>
+<style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('22.png'); /* Replace '12.png' with your image path */
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Menu styles */
+    .menu {
+        margin-bottom: 100px;
+        margin-top: -100px;
+        background-color: transparent;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu a {
+        margin-left: 150px;
+        float: left;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    .menu .right {  
+        float: left;
+    }
+
+    /* Sign-in container */
+    .signin-container {
+        margin-top: 200px;
+        width: 400px;
+        margin: 100px auto;
+        background-image: linear-gradient(rgba(32, 31, 31, 0.61), rgba(255, 255, 255, 0.13));     
+        border: 2px solid #fff; /* White border */
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #fff; /* White text */
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: transparent;
+        border: 2px solid #000000; /* Adjust border color as needed */
+        color: #000000; /* Adjust text color as needed */
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #ffffff;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 20px;
+        color: #fff; /* White text */
+    }
+</style>
+<div class="menu">
+    <a href="acceuil.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <div class="right">
+        <a href="#" class="transparent-button">Sign Up</a>
+    </div>
+</div>
+
+</head>
+<body>
+
+
+<div class="signin-container">
+    <h2>Sign In</h2>
+    <form action="#" method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign In">
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+</div>
+
+</body>
+</html>
